@@ -46,7 +46,7 @@ class QuizBee extends Component{
     render(){
         return (
             <div className="container">
-                <div className="title">What language should I learn?</div>
+                <div className="title">What is a language should I learn?</div>
                 {this.state.questionBank.length > 0 && this.state.responses < 5 && this.state.questionBank.map(({question, answers, correct, questionId}) => (
                     <QuestionBox question = {question} options = {answers} key = {questionId} selected = {answer => this.computeAnswer(answer, correct)} />
                     )

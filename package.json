@@ -2,6 +2,7 @@
   "name": "programming-quiz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gregreda37.github.io/quiz-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
@@ -12,8 +13,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
